@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EA890335-00A5-4504-B88D-8F0A8F3F10AF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rancher_Rush</RootNamespace>
+    <AssemblyName>Rancher Rush</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.1.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="NetworksApi">
+      <HintPath>.\NetworksApi.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aksi.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGameMulti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGameMulti.Designer.cs">
+      <DependentUpon>frmGameMulti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmJoin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJoin.Designer.cs">
+      <DependentUpon>frmJoin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegister.Designer.cs">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameDataSet.cs">
+      <DependentUpon>GameDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GameDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GameDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hewan.cs" />
+    <Compile Include="MenuAwal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAwal.Designer.cs">
+      <DependentUpon>MenuAwal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiPlayerCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultiPlayerCreate.Designer.cs">
+      <DependentUpon>MultiPlayerCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelectChara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectChara.Designer.cs">
+      <DependentUpon>SelectChara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SinglePlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SinglePlayer.Designer.cs">
+      <DependentUpon>SinglePlayer.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGameMulti.resx">
+      <DependentUpon>frmGameMulti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJoin.resx">
+      <DependentUpon>frmJoin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegister.resx">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAwal.resx">
+      <DependentUpon>MenuAwal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiPlayerCreate.resx">
+      <DependentUpon>MultiPlayerCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SelectChara.resx">
+      <DependentUpon>SelectChara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SinglePlayer.resx">
+      <DependentUpon>SinglePlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="GameDataSet.xsc">
+      <DependentUpon>GameDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GameDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GameDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GameDataSet.xss">
+      <DependentUpon>GameDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cool Text - Rancher Rush 187049736419337.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vectortoons-01-18-1564.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brewster-Blue-Gauzy-Texture-Wallpaper-P15472879.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D4Ka.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D4Ki.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D4TransKa.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D4TransKi.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D5Back.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D5JumpKa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D5JumpKi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D5Ka.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D5Ki.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D5TransKa.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D5TransKi.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Portal.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PortBack.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D1Back.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D1JumpKa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D1JumpKi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D1Ka.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D1Ki.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D1TransKa.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D1TransKi.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D2Back.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D2JumpKa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D2JumpKi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D2Ka.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D2Ki.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D2TransKa.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D2TransKi.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D3Back.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D3JumpKa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D3JumpKi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D3Ka.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D3Ki.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D3TransKa.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D3TransKi.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D4Back.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D4JumpKa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D4JumpKi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Speed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P1Kiri.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P1Kanan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

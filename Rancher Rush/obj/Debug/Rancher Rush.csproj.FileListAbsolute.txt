@@ -1,0 +1,25 @@
+D:\Soal Latihan\Rancher Rush\Rancher Rush\bin\Debug\Rancher Rush.exe.config
+D:\Soal Latihan\Rancher Rush\Rancher Rush\obj\Debug\Rancher Rush.csprojResolveAssemblyReference.cache
+D:\Soal Latihan\Rancher Rush\Rancher Rush\obj\Debug\Rancher_Rush.frmLogin.resources
+D:\Soal Latihan\Rancher Rush\Rancher Rush\obj\Debug\Rancher_Rush.frmRegister.resources
+D:\Soal Latihan\Rancher Rush\Rancher Rush\obj\Debug\Rancher_Rush.Menu.resources
+D:\Soal Latihan\Rancher Rush\Rancher Rush\obj\Debug\Rancher_Rush.Properties.Resources.resources
+D:\Soal Latihan\Rancher Rush\Rancher Rush\obj\Debug\Rancher_Rush.SelectChara.resources
+D:\Soal Latihan\Rancher Rush\Rancher Rush\obj\Debug\Rancher Rush.csproj.GenerateResource.Cache
+D:\Soal Latihan\Rancher Rush\Rancher Rush\bin\Debug\Rancher Rush.exe
+D:\Soal Latihan\Rancher Rush\Rancher Rush\bin\Debug\Rancher Rush.pdb
+D:\Soal Latihan\Rancher Rush\Rancher Rush\obj\Debug\Rancher Rush.exe
+D:\Soal Latihan\Rancher Rush\Rancher Rush\obj\Debug\Rancher Rush.pdb
+D:\Soal Latihan\Rancher Rush\Rancher Rush\bin\Debug\Properties\Resources.resx
+D:\Soal Latihan\Rancher Rush\Rancher Rush\bin\Debug\Properties\Resources.Designer.cs
+D:\Soal Latihan\Rancher Rush\Rancher Rush\obj\Debug\Rancher_Rush.SinglePlayer.resources
+D:\Soal Latihan\Rancher Rush\Rancher Rush\bin\Debug\NetworksApi.dll
+D:\Soal Latihan\Rancher Rush\Rancher Rush\obj\Debug\Rancher_Rush.frmGameMulti.resources
+D:\Soal Latihan\Rancher Rush\Rancher Rush\obj\Debug\Rancher_Rush.MultiPlayerCreate.resources
+D:\Soal Latihan\Rancher Rush\Rancher Rush\obj\Debug\Rancher_Rush.frmJoin.resources
+D:\Rancher Rush\Rancher Rush\bin\Debug\Rancher Rush.exe.config
+D:\Rancher Rush\Rancher Rush\obj\Debug\Rancher Rush.exe
+D:\Rancher Rush\Rancher Rush\obj\Debug\Rancher Rush.pdb
+D:\Programming and Design\Visual Studio\Proyek\Rancher Rush\Rancher Rush\bin\Debug\Rancher Rush.exe.config
+D:\Programming and Design\Visual Studio\Proyek\Rancher Rush\Rancher Rush\obj\Debug\Rancher Rush.exe
+D:\Programming and Design\Visual Studio\Proyek\Rancher Rush\Rancher Rush\obj\Debug\Rancher Rush.pdb
